@@ -31,6 +31,7 @@ public class HelloWorld extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
 		UserData userData = new UserData(request.getParameter("username"), request.getParameter("password"));
 		System.out.println("UserName :" + request.getParameter("username") + "\n" + "Password :"
 				+ request.getParameter("password"));
